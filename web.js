@@ -16,9 +16,9 @@ const correctUser1 = "Eddha";
                 passwordInput.setCustomValidity('');
             } else {
                 event.preventDefault();
-                alert("You want some pointers 'bout her?");
-                usernameInput.setCustomValidity("What's her name?");
-                passwordInput.setCustomValidity("What do you want to say to her but you can't say?");
+                alert("Invalid username or password");
+                usernameInput.setCustomValidity("Wrong username");
+                passwordInput.setCustomValidity("Wrong password");
                 usernameInput.reportValidity();
             }
         });
